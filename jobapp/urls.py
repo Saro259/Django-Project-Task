@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import job_ad_listing, job_post, job_single, SearchView, apply_job
+from .views import job_ad_listing, job_post, job_single, SearchView, apply_job, about_us
 
 app_name = 'jobapp'
 
@@ -10,5 +10,6 @@ urlpatterns = [
     path('job-single/<int:id>/', job_single, name='job_single'),
     path('search/', SearchView.as_view(), name='search'),
     path('apply/', apply_job, name='apply_job'),
+    path('about-us/', about_us, name='about_us')
     
 ]

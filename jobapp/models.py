@@ -5,14 +5,6 @@ from django.utils import timezone
 
 # Create your models here.
 
-
-# class Contact(models.Model):
-#     first_name = models.CharField(max_length=100)
-#     last_name = models.CharFiled(max_length=100)
-#     email_id = models.EmailField()
-#     subject = models.CharField(max_length=100)
-#     message = models.TextField()
-
 JOB_TYPE = (
     ('Full-Time', 'Full-time'),
     ('Part-Time', 'Part-Time'),
